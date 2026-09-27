@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { site } from "@/lib/config";
+export const metadata: Metadata = { title: "Careers — Dense AI", description: "Contact Dense AI about opportunities to work with the team." };
+export default function CareersPage() { return <SectionLike title="Build the human layer for AI." eyebrow="Careers" description="For team opportunities, share your background and the kind of work you want to contribute to." href={`mailto:${site.email}`} label="Email Dense AI" /> }
+function SectionLike({eyebrow,title,description,href,label}:{eyebrow:string;title:string;description:string;href:string;label:string}) { return <main className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32"><p className="text-xs font-medium uppercase tracking-[0.14em] text-blue">{eyebrow}</p><h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-ink dark:text-white sm:text-5xl">{title}</h1><p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted dark:text-white/60">{description}</p><a href={href} className="mt-8 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-white focus-ring dark:bg-white dark:text-ink">{label} <ArrowRight size={16}/></a><Link href="/" className="mt-5 ml-5 inline-flex text-sm font-medium text-blue focus-ring">Back home</Link></main> }
