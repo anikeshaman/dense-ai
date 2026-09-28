@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md dark:border-white/10 dark:bg-navy/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-10">
         <a href="/" className="flex items-center gap-2 focus-ring">
-          <Image src="/logo.png" alt="Dense AI logo" width={44} height={44} className="h-10 w-10 lg:h-11 lg:w-11" priority />
+          <Image src="/logo-mark.png"alt="Dense AI"width={44}height={44}className="h-10 w-10 lg:h-11 lg:w-11 object-contain"/>
           <span className="text-lg font-semibold tracking-tight text-ink dark:text-white">Dense AI</span>
         </a>
 
