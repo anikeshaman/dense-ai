@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import {
   ArrowRight,
   Database,
@@ -16,10 +17,12 @@ import {
   Settings2,
   Eye,
 } from "lucide-react";
+
 import { Section, SectionHeader } from "@/components/section";
 import { ServiceCard } from "@/components/service-card";
 import { Faq } from "@/components/faq";
 import { ProjectForm } from "@/components/project-form";
+
 import {
   capabilities,
   founders,
@@ -99,10 +102,10 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="relative overflow-hidden rounded-3xl border border-border bg-white p-10 shadow-[0_20px_60px_rgba(16,24,45,0.08)] dark:border-white/10 dark:bg-ink">
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-white px-8 py-10 shadow-[0_20px_60px_rgba(16,24,45,0.08)] dark:border-white/10 dark:bg-ink">
               <div className="pointer-events-none absolute inset-0 bg-grid opacity-60 dark:opacity-20" />
 
-              <div className="relative flex flex-col items-center gap-6 text-center">
+              <div className="relative flex flex-col items-center gap-5 pb-2 text-center">
                 <Image
                   src="/logo.png"
                   alt="Dense AI logo"
